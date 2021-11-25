@@ -17,7 +17,7 @@ export default {
   },
   created() {
     // Simple GET request using fetch
-    fetch("https://thingproxy.freeboard.io/fetch/https://voz3p605f3.execute-api.us-east-1.amazonaws.com/Production/agent-app-dashboard")
+    fetch("https://voz3p605f3.execute-api.us-east-1.amazonaws.com/Production/agent-app-dashboard")
       .then(response => response.json())
       .then(data => (this.dashboard = data));
   }
